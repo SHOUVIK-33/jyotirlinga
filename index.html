@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dwadasha Jyotirlinga | The Twelve Pillars of Light</title>
+<meta name="description" content="A complete guide to the twelve Jyotirlingas of Lord Shiva: legends, history, location, shlokas, scriptural references and visiting tips.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Karla:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><a href="#hero" class="logo">Jyotirlinga</a>
+<nav><a href="#story">The Story</a><a href="#explore">Explore</a><a href="#stotram">Stotram</a><a href="#texts">Scriptures</a></nav></header>
+
+<section id="hero">
+<div class="stars" aria-hidden="true"></div>
+<div class="hero-text">
+<h1>Twelve pillars of light across Bharat</h1>
+<p>Tap any glowing point on the sky-map of India. Each one is a place where, tradition says, Shiva appeared as an infinite column of light.</p>
+</div>
+<div class="map-wrap"><svg id="constellation" viewBox="0 0 400 460" role="group" aria-label="Map of the twelve Jyotirlingas by latitude and longitude"></svg>
+<p id="hint" class="hint">Hover or focus a star to see its name.</p></div>
+</section>
+
+<section id="story" class="wrap narrow">
+<h2>What is a Jyotirlinga?</h2>
+<p><i>Jyoti</i> means radiance and <i>linga</i> means sign. A Jyotirlinga is a shrine where Shiva is believed to have manifested as light, beyond form and beginning.</p>
+<p>The Shiva Purana tells how Brahma and Vishnu argued over who was greater. A blazing column of fire rose before them with no visible end. Brahma flew up as a swan and Vishnu dug down as a boar. Neither found the limit; Brahma falsely claimed he had, and Shiva revealed himself, cursing Brahma and humbling both gods.</p>
+<p>That column is the source of the twelve. The Shiva Purana lists them, and Adi Shankaracharya's hymn made the list famous across India.</p>
+<div class="stats"><div><b>12</b>shrines</div><div><b>8</b>states</div><div><b>3,583 m</b>highest, Kedarnath</div><div><b>~1,000 yrs</b>of rebuilding at Somnath</div></div>
+</section>
+
+<section id="explore" class="wrap">
+<h2>Explore the twelve</h2>
+<div class="tools"><input id="q" type="search" placeholder="Search by name, state, river or legend" aria-label="Search Jyotirlingas"><select id="state" aria-label="Filter by state"><option value="">All states</option></select><button id="route">Show in stotram order</button></div>
+<div id="grid" class="grid"></div>
+<p id="none" class="hint" hidden>No shrine matches. Clear the search or choose All states.</p>
+</section>
+
+<section id="stotram" class="wrap narrow">
+<h2>Dwadasha Jyotirlinga Stotram</h2>
+<p class="hint">Attributed to Adi Shankaracharya. Transliteration is shown below.</p>
+<blockquote id="stotra"></blockquote>
+<p>Tradition says those who recite this morning and evening are freed from sins of seven births. Another famous line to chant: <i>Om Tryambakam yajamahe sugandhim pushtivardhanam, urvarukamiva bandhanan mrityor mukshiya maamritat.</i> This is the Mahamrityunjaya mantra from the Rig Veda.</p>
+</section>
+
+<section id="texts" class="wrap">
+<h2>In the scriptures</h2>
+<div id="textlist" class="tl"></div>
+</section>
+
+<footer><p>Made with devotion for an open source project. Verify details on official temple sites before travel. Har Har Mahadev.</p></footer>
+
+<div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="mt" hidden>
+<div class="sheet"><button id="close" aria-label="Close">Close</button>
+<h3 id="mt"></h3><p id="msub" class="hint"></p>
+<div class="tabs" role="tablist"></div><div id="mbody"></div>
+<div class="pn"><button id="prev">Previous</button><button id="next">Next</button></div></div></div>
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body></html>
